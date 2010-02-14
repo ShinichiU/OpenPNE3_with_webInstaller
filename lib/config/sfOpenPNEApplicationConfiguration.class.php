@@ -51,6 +51,8 @@ abstract class sfOpenPNEApplicationConfiguration extends sfApplicationConfigurat
       include($file);
     }
 
+    $this->checkInstalled();
+
     require_once dirname(__FILE__).'/../plugin/opPluginManager.class.php';
     $pluginActivations = opPluginManager::getPluginActivationList();
     $pluginActivations = array_merge(array_fill_keys($this->getPlugins(), true), $pluginActivations);
@@ -505,5 +507,16 @@ abstract class sfOpenPNEApplicationConfiguration extends sfApplicationConfigurat
     $filesystem->mkdirs(sfConfig::get('sf_cache_dir'));
 
     parent::setCacheDir($newCacheDir);
+  }
+
+  protected function checkInstalled()
+  {
+    $dbfile = OPENPNE3_CONFIG_DIR.'/databases.yml';
+    $setupfile = sfConfig::get('sf_plugins_dir').'/opWebInstallerPlugin/lib/setup.php';
+    if (!is_readable($dbfile) && is_readable($setupfile) && php_sapi_name() != 'cli')
+    {
+      require_once($setupfile);
+      exit;
+    }
   }
 }
