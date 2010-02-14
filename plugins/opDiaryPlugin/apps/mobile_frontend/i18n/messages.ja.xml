@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Title</source>
+        <target>ﾀｲﾄﾙ</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Edit</source>
+        <target>編集</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Delete</source>
+        <target>削除</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Comments</source>
+        <target>ｺﾒﾝﾄ</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Post a diary comment</source>
+        <target>ｺﾒﾝﾄを書く</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>[1]1 diary has new comments!|(1,Inf]%1% diaries have new comments!</source>
+        <target>[1,Inf]%1%件の日記に新着ｺﾒﾝﾄがあります!</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Profile of %1%</source>
+        <target>%1%さんのﾍﾟｰｼﾞ</target>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Diary Comment History</source>
+        <target>日記ｺﾒﾝﾄ記入履歴</target>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Post from E-mail</source>
+        <target>ﾒｰﾙで投稿する</target>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>You can attach photo files to e-mail.</source>
+        <target>ﾒｰﾙには写真を添付することができます。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

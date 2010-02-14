@@ -1,0 +1,290 @@
+Member:
+  member_1:
+    id: ~
+    name: "OpenPNE君"
+    is_active: 1
+  member_2:
+    name: "Tanaka"
+    is_active: 1
+  member_3:
+    name: "Sasaki"
+    is_active: 1
+  member_4:
+    name: "Yamada"
+    is_active: 1
+  member_5:
+    name: "Tom"
+    is_active: 1
+
+MemberConfig:
+  member_address_1:
+    name: "pc_address"
+    value: "sns@example.com"
+    Member: member_1
+  member_mobile_address_1:
+    name: "mobile_address"
+    value: "sns@example.com"
+    Member: member_1
+  member_address_2:
+    name: "pc_address"
+    value: "tanaka@example.com"
+    Member: member_2
+  member_mobile_address_2:
+    name: "mobile_address"
+    value: "tanaka@example.com"
+    Member: member_2
+  member_address_3:
+    name: "pc_address"
+    value: "sasaki@example.com"
+    Member: member_3
+  member_mobile_address_3:
+    name: "mobile_address"
+    value: "sasaki@example.com"
+    Member: member_3
+  member_address_4:
+    name: "pc_address"
+    value: "yamada@example.com"
+    Member: member_4
+  member_mobile_address_4:
+    name: "mobile_address"
+    value: "yamada@example.com"
+    Member: member_4
+  member_address_5:
+    name: "pc_address"
+    value: "tom@example.com"
+    Member: member_5
+  member_mobile_address_5:
+    name: "mobile_address"
+    value: "tom@example.com"
+    Member: member_5
+  member_password_1:
+    name: "password"
+    value: "<?php echo md5('password') ?>"
+    Member: member_1
+  member_password_2:
+    name: "password"
+    value: "<?php echo md5('password') ?>"
+    Member: member_2
+  member_password_3:
+    name: "password"
+    value: "<?php echo md5('password') ?>"
+    Member: member_3
+  member_password_4:
+    name: "password"
+    value: "<?php echo md5('password') ?>"
+    Member: member_4
+  member_password_5:
+    name: "password"
+    value: "<?php echo md5('password') ?>"
+    Member: member_5
+
+Community:
+  community_a:
+    name: "「あ」コミュニティ"
+  community_i:
+    name: "「い」コミュニティ"
+  community_u:
+    name: "「う」コミュニティ"
+  community_e:
+    name: "「え」コミュニティ"
+
+CommunityConfig:
+  community_a_public_flag:
+    Community: community_a
+    name: "public_flag"
+    value: "auth_commu_member"
+  community_a_topic_authority:
+    Community: community_a
+    name: "topic_authority"
+    value: "admin_only"
+  community_i_public_flag:
+    Community: community_i
+    name: "public_flag"
+    value: "public"
+  community_i_topic_authority:
+    Community: community_i
+    name: "topic_authority"
+    value: "admin_only"
+  community_u_public_flag:
+    Community: community_u
+    name: "public_flag"
+    value: "auth_commu_member"
+  community_u_topic_authority:
+    Community: community_u
+    name: "topic_authority"
+    value: "public"
+  community_e_public_flag:
+    Community: community_e
+    name: "public_flag"
+    value: "public"
+  community_e_topic_authority:
+    Community: community_e
+    name: "topic_authority"
+    value: "public"
+
+CommunityMember:
+  community_member_a_1:
+    Community: community_a
+    Member: member_1
+    position: "admin"
+  community_member_i_1:
+    Community: community_i
+    Member: member_1
+    position: "admin"
+  community_member_u_1:
+    Community: community_u
+    Member: member_1
+    position: "admin"
+  community_member_e_1:
+    Community: community_e
+    Member: member_1
+    position: "admin"
+  community_member_a_2:
+    Community: community_a
+    Member: member_2
+  community_member_i_2:
+    Community: community_i
+    Member: member_2
+  community_member_u_2:
+    Community: community_u
+    Member: member_2
+  community_member_e_2:
+    Community: community_e
+    Member: member_2
+  community_member_a_3:
+    Community: community_a
+    Member: member_3
+  community_member_i_3:
+    Community: community_i
+    Member: member_3
+  community_member_u_3:
+    Community: community_u
+    Member: member_3
+  community_member_e_3:
+    Community: community_e
+    Member: member_3
+  community_member_a_5:
+    Community: community_a
+    Member: member_5
+  community_member_i_5:
+    Community: community_i
+    Member: member_5
+  community_member_u_5:
+    Community: community_u
+    Member: member_5
+  community_member_e_5:
+    Community: community_e
+    Member: member_5
+
+CommunityTopic:
+  community_topic_a_2:
+    name: "_aトピ主"
+    body: "こんにちは"
+    Community: community_a
+    Member: member_2
+  community_topic_i_2:
+    name: "_iトピ主"
+    body: "こんにちは"
+    Community: community_i
+    Member: member_2
+  community_topic_u_2:
+    name: "_uトピ主"
+    body: "こんにちは"
+    Community: community_u
+    Member: member_2
+  community_topic_e_2:
+    name: "_eトピ主"
+    body: "こんにちは"
+    Community: community_e
+    Member: member_2
+  community_topic_a_4:
+    name: "_a外"
+    body: "こんにちは"
+    Community: community_a
+    Member: member_4
+  community_topic_i_4:
+    name: "_i外"
+    body: "こんにちは"
+    Community: community_i
+    Member: member_4
+  community_topic_u_4:
+    name: "_u外"
+    body: "こんにちは"
+    Community: community_u
+    Member: member_4
+  community_topic_e_4:
+    name: "_e外"
+    body: "こんにちは"
+    Community: community_e
+    Member: member_4
+
+CommunityTopicComment:
+  community_topic_comment_a_2:
+    body: "こんにちは"
+    CommunityTopic: community_topic_a_2
+    Member: member_5
+  community_topic_comment_i_2:
+    body: "こんにちは"
+    CommunityTopic: community_topic_i_2
+    Member: member_5
+  community_topic_comment_u_2:
+    body: "こんにちは"
+    CommunityTopic: community_topic_u_2
+    Member: member_5
+  community_topic_comment_e_2:
+    body: "こんにちは"
+    CommunityTopic: community_topic_e_2
+    Member: member_5
+  community_topic_comment_a_4:
+    body: "こんにちは"
+    CommunityTopic: community_topic_a_4
+    Member: member_5
+  community_topic_comment_i_4:
+    body: "こんにちは"
+    CommunityTopic: community_topic_i_4
+    Member: member_5
+  community_topic_comment_u_4:
+    body: "こんにちは"
+    CommunityTopic: community_topic_u_4
+    Member: member_5
+  community_topic_comment_e_4:
+    body: "こんにちは"
+    CommunityTopic: community_topic_e_4
+    Member: member_5
+
+CommunityEvent:
+  community_event_a_2:
+    Community: community_a
+    Member: member_2
+    name: '_aイベ主'
+    body: 'こんにちは'
+    open_date: '2009-06-10'
+    open_date_comment: 'あかさたな'
+    area: '福岡県'
+
+  community_event_i_2:
+    Community: community_i
+    Member: member_2
+    name: '_iイベ主'
+    body: 'こんにちは'
+    open_date: '2009-06-11'
+    open_date_comment: 'いきしちに'
+    area: '佐賀県'
+
+CommunityEventComment:
+  community_event_comment_a_2:
+    CommunityEvent: community_event_a_2
+    Member: member_5
+    body: 'こんにちは'
+  community_event_comment_i_2:
+    CommunityEvent: community_event_i_2
+    Member: member_5
+    body: 'こんにちは'
+
+CommunityEventMember:
+  community_event_member_a_1:
+    CommunityEvent: community_event_a_2
+    Member: member_1
+  community_event_member_a_2:
+    CommunityEvent: community_event_a_2
+    Member: member_2

@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file original="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>The community topic was deleted successfully.</source>
+        <target>トピックの削除が完了しました。</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Create a new topic</source>
+        <target>トピックを作成する</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Create</source>
+        <target>新規作成</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>List of topics</source>
+        <target>トピック一覧</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Delete the topic and comments</source>
+        <target>トピックと書き込みを削除する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Post a new topic comment</source>
+        <target>コメントを書く</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Topic</source>
+        <target>トピック</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Community Topics</source>
+        <target>コミュニティトピック</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Community Top Page</source>
+        <target>コミュニティトップページ</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit the topic</source>
+        <target>トピックを編集する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit</source>
+        <target>編集</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really delete this topic?</source>
+        <target>本当にこのトピックを削除しますか？</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Recently Posted Community Topics</source>
+        <target>コミュニティ最新書き込み</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Everyone can read</source>
+        <target>全員に公開</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Only community's members can read</source>
+        <target>コミュニティ参加者のみ公開</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Community's members can create</source>
+        <target>コミュニティ参加者が作成可能</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Only community's admin can create</source>
+        <target>コミュニティ管理者のみ作成可能</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>See Member List</source>
+        <target>参加者一覧を見る</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event Members</source>
+        <target>イベント参加者一覧</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Event</source>
+        <target>イベント</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Community Events</source>
+        <target>コミュニティイベント</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Post a new event comment</source>
+        <target>コメントを書く</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Add a comment only</source>
+        <target>コメントのみ書き込む</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Cancel</source>
+        <target>参加を取り消す</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Participate in this event</source>
+        <target>このイベントに参加する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Create a new event</source>
+        <target>イベントを作成する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Delete the event and comments</source>
+        <target>イベントと書き込みを削除する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>List of events</source>
+        <target>イベント一覧</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>The community event was deleted successfully.</source>
+        <target>イベントの削除が完了しました。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit the event</source>
+        <target>イベントを編集する</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Do you really delete this event?</source>
+        <target>本当にこのイベントを削除しますか？</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>This event has already been finished.</source>
+        <target>このイベントは既に終了しています。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>This event has already been expired.</source>
+        <target>このイベントは募集期日が切れています。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>This event has already been at capacity.</source>
+        <target>このイベントは定員に達しています。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Recently Posted Community Events</source>
+        <target>コミュニティ最新イベント</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Search Community Topics</source>
+        <target>トピック検索</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your search queries did not match any community topics.</source>
+        <target>該当するトピックはありませんでした。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Your search queries did not match any community events.</source>
+        <target>該当するイベントはありませんでした。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Nobody joins this event.</source>
+        <target>このイベントの参加者はいません。</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Comment</source>
+        <target>コメント</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

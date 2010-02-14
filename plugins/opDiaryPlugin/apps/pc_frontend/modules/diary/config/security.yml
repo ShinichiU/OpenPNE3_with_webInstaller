@@ -1,0 +1,14 @@
+index:
+  is_secure: false
+
+list:
+  is_secure: false
+
+search:
+  is_secure: false
+
+listMember:
+  is_secure: false
+
+show:
+  is_secure: false

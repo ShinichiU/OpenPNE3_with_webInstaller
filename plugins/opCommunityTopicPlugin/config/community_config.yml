@@ -1,0 +1,23 @@
+general:
+  public_flag:
+    Name:       "public_flag"
+    Caption:    "Authority to Read Topic"
+    FormType:   "radio"
+    ValueType:  "string"
+    IsUnique:   false
+    IsRequired: true
+    Default: "public"
+    Choices:
+      public:            "Everyone can read"
+      auth_commu_member: "Only community's members can read"
+  topic_authority:
+    Name:       "topic_authority"
+    Caption:    "Authority to Create Topic"
+    FormType:   "radio"
+    ValueType:  "string"
+    IsUnique:   false
+    IsRequired: true
+    Default:    "public"
+    Choices:
+      public:     "Community's members can create"
+      admin_only: "Only community's admin can create"

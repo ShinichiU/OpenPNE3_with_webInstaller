@@ -1,0 +1,20 @@
+Gadget:
+  community_comment_list:
+    type: "contents"
+    name: "recentCommunityTopicComment"
+    sort_order: 131
+
+  mobile_community_comment_list:
+    type: "mobileContents"
+    name: "recentCommunityTopicComment"
+    sort_order: 110
+
+  community_event_comment_list:
+    type: "contents"
+    name: "recentCommunityEventComment"
+    sort_order: 132
+
+  mobile_community_event_comment_list:
+    type: "mobileContents"
+    name: "recentCommunityEventComment"
+    sort_order: 111
