@@ -5,6 +5,7 @@ cache/*
 data/migrations/generated/*
 config/databases.yml
 config/OpenPNE.yml
+!data/sql/schema.sql
 data/sql/*.*
 web/sf
 data/config/*
