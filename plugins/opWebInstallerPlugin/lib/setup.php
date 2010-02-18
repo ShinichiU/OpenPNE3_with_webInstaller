@@ -31,6 +31,7 @@ if ($params = $requests->getParameter($form->getName()))
   else
   {
     require_once($path.'progressSuccess.php');
+    connection::setup($params);
     chdir(sfConfig::get('sf_root_dir'));
     $sfbin = sfConfig::get('sf_root_dir').'/symfony';
     $options = ' --dbms='.$params['DBMS'].' --username='.$params['username'].' --password='.$params['password'].' --hostname='.$params['hostname'].' --port='.$params['port'].' --dbname='.$params['database'].' --sock='.$params['socket'];
@@ -45,3 +46,18 @@ else
   require_once($path.'indexSuccess.php');
 }
 exit;
+
+class connection
+{
+  private static $dsn;
+
+  public public function setup($params)
+  {
+    self::$dsn = sprintf('%s://%s:%s@%s/%s', $params['DBMS'], $params['username'], $params['password'], $params['hostname'], $params['database']);
+  }
+
+  public static function getConnection()
+  {
+    return Doctrine_Manager::connection($dsn);
+  }
+}
