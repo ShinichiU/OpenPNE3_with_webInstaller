@@ -1,0 +1,40 @@
+options:
+  charset: utf8
+ 
+Album:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    member_id: { type: integer(4), notnull: false }
+    title: { type: string, notnull: true }
+    body: { type: string, notnull: true }
+    public_flag: { type: integer(1), notnull: true, default: 1 }
+    file_id: { type: integer(4), notnull: false }
+  relations:
+    Member:
+      foreignAlias: Albums
+      onDelete: cascade
+    File:
+      foreignAlias: Albums
+      onDelete: cascade
+ 
+AlbumImage:
+  actAs: [Timestampable]
+  columns:
+    id: { type: integer(4), primary: true, autoincrement: true }
+    album_id: { type: integer(4), notnull: true }
+    member_id: { type: integer(4), notnull: true }
+    file_id: { type: integer(4), notnull: false }
+    description: { type: string, notnull: false }
+    filesize: { type: integer, notnull: true }
+  relations:
+    Album:
+      foreignAlias: AlbumImages
+      onDelete: cascade
+    File:
+      foreignAlias: AlbumImages
+      onDelete: cascade
+    Member:
+      foreignAlias: AlbumImages
+      onDelete: cascade
+

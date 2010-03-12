@@ -1,0 +1,235 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>Title</source>
+        <target>タイトル</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Body</source>
+        <target>本文</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Created at</source>
+        <target>作成日時</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>Public</source>
+        <target>全体に公開</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Post a diary</source>
+        <target>日記を書く</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Edit the diary</source>
+        <target>日記を編集する</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Edit this diary</source>
+        <target>この日記を編集する</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Delete this diary</source>
+        <target>この日記を削除する</target>
+      </trans-unit>
+      <trans-unit id="9">
+        <source>Recently Posted Diaries</source>
+        <target>最新日記</target>
+      </trans-unit>
+      <trans-unit id="10">
+        <source>Recently Posted Diaries of %my_friend%</source>
+        <target>%my_friend%最新日記</target>
+      </trans-unit>
+      <trans-unit id="11">
+        <source>Diaries of %my_friend%</source>
+        <target>%my_friend%の日記</target>
+      </trans-unit>
+      <trans-unit id="12">
+        <source>Diaries of %1%</source>
+        <target>%1%さんの日記</target>
+      </trans-unit>
+      <trans-unit id="13">
+        <source>Diary of %1%</source>
+        <target>%1%さんの日記</target>
+      </trans-unit>
+      <trans-unit id="14">
+        <source>There are no diaries.</source>
+        <target>日記がありません。</target>
+      </trans-unit>
+      <trans-unit id="15">
+        <source>View this diary</source>
+        <target>詳細を見る</target>
+      </trans-unit>
+      <trans-unit id="16">
+        <source>More</source>
+        <target>もっと見る</target>
+      </trans-unit>
+      <trans-unit id="17">
+        <source>Save</source>
+        <target>確定</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Photo 1</source>
+        <target>写真1</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Photo 2</source>
+        <target>写真2</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Photo 3</source>
+        <target>写真3</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>Required.</source>
+        <target>必須項目です。</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>Comments</source>
+        <target>コメント</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>Post a diary comment</source>
+        <target>コメントを書く</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>Public flag</source>
+        <target>公開範囲</target>
+      </trans-unit>
+      <trans-unit id="30">
+        <source>The diary was deleted successfully.</source>
+        <target>日記を削除しました。</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>[1]1 diary has new comments!|(1,Inf]%1% diaries have new comments!</source>
+        <target>[1,Inf]%1%件の日記に新着コメントがあります！</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>View %1% per page</source>
+        <target>%1%件ずつ表示</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>View Latest</source>
+        <target>最新を表示</target>
+      </trans-unit>
+      <trans-unit id="34">
+        <source>View Oldest First</source>
+        <target>最初から表示</target>
+      </trans-unit>
+      <trans-unit id="35">
+        <source>Older</source>
+        <target>前を表示</target>
+      </trans-unit>
+      <trans-unit id="36">
+        <source>Newer</source>
+        <target>次を表示</target>
+      </trans-unit>
+      <trans-unit id="37">
+        <source>No. %1% - %2%</source>
+        <target>%1%番～%2%番を表示</target>
+      </trans-unit>
+      <trans-unit id="38">
+        <source>Profile of %1%</source>
+        <target>%1%さんのページ</target>
+      </trans-unit>
+      <trans-unit id="39">
+        <source>Recently Posted Diaries of All</source>
+        <target>全体の最新日記</target>
+      </trans-unit>
+      <trans-unit id="40">
+        <source>My Diaries</source>
+        <target>自分の日記</target>
+      </trans-unit>
+      <trans-unit id="41">
+        <source>Previous Diary</source>
+        <target>前の日記</target>
+      </trans-unit>
+      <trans-unit id="42">
+        <source>Next Diary</source>
+        <target>次の日記</target>
+      </trans-unit>
+      <trans-unit id="43">
+        <source>Delete the comment</source>
+        <target>コメント削除</target>
+      </trans-unit>
+      <trans-unit id="44">
+        <source>Do you really delete this comment?</source>
+        <target>本当にこのコメントを削除しますか？</target>
+      </trans-unit>
+      <trans-unit id="45">
+        <source>Go back to the diary page</source>
+        <target>日記のページへ戻る</target>
+      </trans-unit>
+      <trans-unit id="46">
+        <source>The comment was deleted successfully.</source>
+        <target>コメントを削除しました。</target>
+      </trans-unit>
+      <trans-unit id="47">
+        <source>Delete the diary</source>
+        <target>日記を削除する</target>
+      </trans-unit>
+      <trans-unit id="48">
+        <source>Do you really delete this diary?</source>
+        <target>本当にこの日記を削除しますか？</target>
+      </trans-unit>
+      <trans-unit id="49">
+        <source>Diary Search</source>
+        <target>日記検索</target>
+      </trans-unit>
+      <trans-unit id="50">
+        <source>Search Results</source>
+        <target>検索結果</target>
+      </trans-unit>
+      <trans-unit id="51">
+        <source>Your search "%1%" did not match any diaries.</source>
+        <target>「%1%」に一致する日記は見つかりませんでした。</target>
+      </trans-unit>
+      <trans-unit id="52">
+        <source>Diary Comment History</source>
+        <target>日記コメント記入履歴</target>
+      </trans-unit>
+      <trans-unit id="53">
+        <source>remove the current photo</source>
+        <target>現在の画像を削除する</target>
+      </trans-unit>
+      <trans-unit id="54">
+        <source>Diary List</source>
+        <target>日記リスト</target>
+      </trans-unit>
+      <trans-unit id="55">
+        <source>Diary Comment List</source>
+        <target>日記コメントリスト</target>
+      </trans-unit>
+      <trans-unit id="56">
+        <source>Diary</source>
+        <target>日記</target>
+      </trans-unit>
+      <trans-unit id="57">
+        <source>There are no diary comments.</source>
+        <target>日記コメントがありません。</target>
+      </trans-unit>
+      <trans-unit id="58">
+        <source>Diary Configuration</source>
+        <target>日記設定</target>
+      </trans-unit>
+      <trans-unit id="59">
+        <source>Default public flag for your new diaries. Past diaries are not changed.</source>
+        <target>日記を新しく書く際の公開範囲の初期値です。これまでに書かれた日記の公開範囲は変更されません。</target>
+      </trans-unit>
+      <trans-unit id="60">
+        <source>Body is required.</source>
+        <target>本文を入力してください。</target>
+      </trans-unit>
+      <trans-unit id="61">
+        <source>Diary ID</source>
+        <target>日記ID</target>
+      </trans-unit>
+      <trans-unit id="62">
+        <source>Your search "%1%" did not match any diary comments.</source>
+        <target>「%1%」に一致する日記コメントは見つかりませんでした。</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

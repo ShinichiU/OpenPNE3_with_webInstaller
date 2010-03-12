@@ -1,0 +1,83 @@
+diaryFriendList:
+  caption:
+    ja_JP: "マイフレンド最新日記"
+  description:
+    ja_JP: "マイフレンドの書いた日記を新着順に表示します。"
+  component: [diary, friendDiaryList]
+  config:
+    max:
+      Name:      "max"
+      Caption:   "最大表示件数"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    5
+      Choices:
+        1: 1
+        3: 3
+        5: 5
+        7: 7
+        10: 10
+
+diaryMyList:
+  caption:
+    ja_JP: "自分の最新日記"
+  description:
+    ja_JP: "自分の書いた日記を新着順に表示します。"
+  component: [diary, myDiaryList]
+  config:
+    max:
+      Name:      "max"
+      Caption:   "最大表示件数"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    5
+      Choices:
+        1: 1
+        3: 3
+        5: 5
+        7: 7
+        10: 10
+
+diaryList:
+  caption:
+    ja_JP: "全体の最新日記"
+  description:
+    ja_JP: "全体の最新日記を新着順に表示します。"
+  component: [diary, diaryList]
+  config:
+    max:
+      Name:      "max"
+      Caption:   "最大表示件数"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    5
+      Choices:
+        1: 1
+        3: 3
+        5: 5
+        7: 7
+        10: 10
+
+diaryCommentHistory:
+  caption:
+    ja_JP: "日記コメント記入履歴"
+  description:
+    ja_JP: "日記コメントの更新情報を新着順に表示します。"
+  component: [diaryComment, history]
+  config:
+    max:
+      Name:      "max"
+      Caption:   "最大表示件数"
+      FormType:  "select"
+      ValueType:  "int"
+      IsRequired: true
+      Default:    5
+      Choices:
+        1: 1
+        3: 3
+        5: 5
+        7: 7
+        10: 10

@@ -1,0 +1,33 @@
+homeSuccess:
+  customize:
+    communityTopicList:
+      template: [communityTopic, communityTopicList]
+      parts: [communityHome]
+      target: [lastRow]
+      is_component: true
+
+    communityEventList:
+      template: [communityEvent, communityEventList]
+      parts: [communityHome]
+      target: [lastRow]
+      is_component: true
+
+    searchFormLine:
+      template: [communityTopic, searchFormLine]
+      parts: [communityHome]
+      target: [after]
+      is_component: false
+
+    topSearchForm:
+      template: [communityTopic, topSearchForm]
+      parts: [communityImageBox]
+      target: [before]
+      is_component: true
+
+searchSuccess:
+  customize:
+    topicSearchLink:
+      template: [communityTopic, topicSearchLink]
+      parts:    [searchCommunity]
+      target:   [after]
+      is_component: false
