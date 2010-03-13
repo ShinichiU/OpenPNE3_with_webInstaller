@@ -1,9 +1,6 @@
 web/cache/*
-log/*
 plugins/.*
-cache/*
 data/migrations/generated/*
-config/databases.yml
 config/OpenPNE.yml
 config/plugins.yml
 data/sql/*.*

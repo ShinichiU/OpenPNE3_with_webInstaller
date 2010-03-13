@@ -51,6 +51,8 @@ abstract class opApplicationConfiguration extends sfApplicationConfiguration
       include($file);
     }
 
+    $this->checkInstalled();
+
     require_once dirname(__FILE__).'/../plugin/opPluginManager.class.php';
     $pluginActivations = opPluginManager::getPluginActivationList();
     $pluginActivations = array_merge(array_fill_keys($this->getPlugins(), true), $pluginActivations);
@@ -505,5 +507,18 @@ abstract class opApplicationConfiguration extends sfApplicationConfiguration
     $filesystem->mkdirs(sfConfig::get('sf_cache_dir'));
 
     parent::setCacheDir($newCacheDir);
+  }
+
+  protected function checkInstalled()
+  {
+    $default_hash = 'd41d8cd98f00b204e9800998ecf8427e';
+
+    $dbfile = OPENPNE3_CONFIG_DIR.'/databases.yml';
+    $setupfile = sfConfig::get('sf_plugins_dir').'/opWebInstallerPlugin/lib/setup.php';
+    if ($default_hash === md5_file($dbfile) && is_readable($setupfile) && php_sapi_name() != 'cli')
+    {
+      require_once($setupfile);
+      exit;
+    }
   }
 }
