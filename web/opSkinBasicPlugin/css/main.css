@@ -1356,3 +1356,22 @@ span.op_color {
 	color: inherit;
 	font-size: inherit;
 }
+
+/*==============================================================================
+ * for web installer
+ *----------------------------------------------------------------------------*/
+
+tr.conf_OK td {
+  color: green;
+	font-weight: bold;
+}
+
+tr.conf_ERROR td {
+  color: red;
+	font-weight: bold;
+}
+
+tr.conf_WARNING td {
+  color: orange;
+	font-weight: bold;
+}

@@ -16,33 +16,28 @@
  */
 //error_reporting(0);
 
-require_once(dirname(__FILE__).'/checkConfiguration.class.php');
+require_once('checkConfiguration.class.php');
 // インストール環境が整っているかのチェック
 checkConfiguration::start();
 $path = dirname(__FILE__).'/../apps/pc_frontend/modules/setup/templates/';
 
 $configurations = checkConfiguration::getConfiguration();
 $requests = new sfWebRequest($this->dispatcher);
-require_once(dirname(__FILE__).'/form/opOpenPNESetupForm.class.php');
+require_once('form/opOpenPNESetupForm.class.php');
 $form = new opOpenPNESetupForm();
 
 if ($params = $requests->getParameter($form->getName()))
 {
   $form->bind($params);
-  if (!$form->isValid() && checkConfiguration::hasFatalError())
+  if (!$form->isValid() || checkConfiguration::hasFatalError())
   {
     require_once($path.'indexSuccess.php');
   }
   else
   {
+    require_once('webinstall.class.php');
+    webinstall::doInstall($params['DBMS'], $params['username'], $params['password'], $params['hostname'], $params['port'], $params['database'], $params['socket']);
     require_once($path.'progressSuccess.php');
-    chdir(sfConfig::get('sf_root_dir'));
-    $sfbin = sfConfig::get('sf_root_dir').'/symfony';
-    $options = ' --dbms='.$params['DBMS'].' --username='.$params['username'].' --password='.$params['password'].' --hostname='.$params['hostname'].' --port='.$params['port'].' --dbname='.$params['database'].' --sock='.$params['socket'];
-    passthru($sfbin.' openpne:webInstall'.$options, $result1);
-    passthru($sfbin.' doctrine:insert-sql', $result2);
-    passthru($sfbin.' doctrine:data-load', $result3);
-    echo $result1."\n".$result2."\n".$result3."\n";
   }
 }
 else

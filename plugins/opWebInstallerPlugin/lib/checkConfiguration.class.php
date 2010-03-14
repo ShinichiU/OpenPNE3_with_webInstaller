@@ -55,7 +55,7 @@ class checkConfiguration
     {
       $gds = gd_info();
       self::setParams($gds['GIF Read Support'] && $gds['GIF Create Support'], 'GD gif サポート', 'GD gif サポートをインストールしてください', true);
-      self::setParams($gds['JPEG Support'], 'GD jpeg サポート', 'GD jpeg サポートをインストールしてください', true);
+      self::setParams($gds['JPEG Support'], 'GD jpeg サポート', 'GD jpeg サポートをインストールしてください', false);
       self::setParams($gds['PNG Support'], 'GD png サポート', 'GD png サポートをインストールしてください', true);
     }
     self::setParams(function_exists('mb_strlen'), 'mbstring 拡張モジュール', 'mbstring 拡張モジュールをインストールしてください', true);

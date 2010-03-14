@@ -88,6 +88,27 @@
 <div id="configurationList" class="dparts form">
 <div class="parts">
 <div class="partsHeading"><h3>OpenPNE利用環境確認</h3></div>
+
+<?php if (checkConfiguration::hasFatalError()): ?>
+<table>
+<tr>
+<th><img src="images/icon_alert.gif" alt="" /></th>
+<td>
+赤色の項目を修正して、「再読み込み」ボタンを押してください
+</td>
+</tr>
+</table>
+<form method="get" action="./">
+<div class="operation">
+<ul class="moreInfo button">
+<li>
+<input type="submit" class="input_submit" value="再読み込み" />
+</li>
+</ul>
+</div>
+</form>
+<?php endif; ?>
+
 <table>
 <?php foreach ($configurations as $configuration): ?>
 <tr class="<?php echo 'conf_'.$configuration['type'] ?>">

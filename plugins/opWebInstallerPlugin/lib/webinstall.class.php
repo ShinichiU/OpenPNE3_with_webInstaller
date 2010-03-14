@@ -1,16 +1,18 @@
 <?php
 
-class installclass
+class webinstall
 {
-  public static function doInstall($dbms, $username, $password, $hostname, $port, $dbname, $sock, $options)
+  public static function doInstall($dbms, $username, $password, $hostname, $port, $dbname, $sock)
   {
-    $this->configureDatabase($dbms, $username, $password, $hostname, $port, $dbname, $sock, $options);
-    $this->buildDb($options);
+    self::configureDatabase($dbms, $username, $password, $hostname, $port, $dbname, $sock);
+
+    self::buildDb();
   }
 
-  public static function configureDatabase($dbms, $username, $password, $hostname, $port, $dbname, $sock, $options)
+  public static function configureDatabase($dbms, $username, $password, $hostname, $port, $dbname, $sock)
   {
-    $dsn = $this->createDSN($dbms, $hostname, $port, $dbname, $sock);
+    require_once(sfConfig::get('sf_root_dir').'/lib/vendor/symfony/lib/plugins/sfDoctrinePlugin/lib/vendor/doctrine/Doctrine.php');
+    $dsn = self::createDSN($dbms, $hostname, $port, $dbname, $sock);
 
     $file = sfConfig::get('sf_config_dir').'/databases.yml';
     $config = array();
@@ -21,10 +23,6 @@ class installclass
     }
 
     $env = 'all';
-    if ('prod' !== $options['env'])
-    {
-      $env = $options['env'];
-    }
 
     $config[$env]['doctrine'] = array(
       'class' => 'sfDoctrineDatabase',
@@ -84,39 +82,23 @@ class installclass
     return $result;
   }
 
-  protected function buildDb($options)
+  protected function buildDb()
   {
-    $tmpdir = sfConfig::get('sf_data_dir').'/fixtures_tmp';
+    $_app = 'pc_frontend';
+    $_env = 'prod';
 
-    $pluginDirs = sfFinder::type('dir')->name('data')->in(sfFinder::type('dir')->name('op*Plugin')->maxdepth(1)->in(sfConfig::get('sf_plugins_dir')));
-    $fixturesDirs = sfFinder::type('dir')->name('fixtures')
-      ->prune('migrations', 'upgrade')
-      ->in(array_merge(array(sfConfig::get('sf_data_dir')), $this->configuration->getPluginSubPaths('/data'), $pluginDirs));
-    $i = 0;
-    foreach ($fixturesDirs as $fixturesDir)
-    {
-      $files = sfFinder::type('file')->name('*.yml')->sort_by_name()->in(array($fixturesDir));
-      
-      foreach ($files as $file)
-      {
-        $this->getFilesystem()->copy($file, $tmpdir.'/'.sprintf('%03d_%s_%s.yml', $i, basename($file, '.yml'), md5(uniqid(rand(), true))));
-      }
-      $i++;
-    }
+    $configuration = ProjectConfiguration::getApplicationConfiguration($_app, $_env, true);
+    new sfDatabaseManager($configuration);
 
-    $task = new sfDoctrineBuildTask($this->dispatcher, $this->formatter);
-    $task->setCommandApplication($this->commandApplication);
-    $task->setConfiguration($this->configuration);
-    $task->run(array(), array(
-      'no-confirmation' => true,
-      'db'              => true,
-      'model'           => true,
-      'forms'           => true,
-      'filters'         => true,
-      'sql'             => true,
-      'and-load'        => $tmpdir,
-      'application'     => $options['application'],
-      'env'             => $options['env'],
+    chdir(sfConfig::get('sf_root_dir'));
+    $insertSql = new sfDoctrineInsertSqlTask($configuration->getEventDispatcher(), new sfFormatter());
+    $insertSql->setConfiguration($configuration);
+    $insertSql->run();
+
+    $dataLoad = new sfDoctrineDataLoadTask($configuration->getEventDispatcher(), new sfFormatter());
+    $dataLoad->setConfiguration($configuration);
+    $dataLoad->run(array(
+      'dir_or_file' => dirname(__FILE__).'/../data/fixtures/3.5.0a/',
     ));
   }
 }

@@ -1,0 +1,20 @@
+Navigation:
+  community_navigation_topic:
+    type: "community"
+    uri: "communityTopic/listCommunity"
+    sort_order: 5
+    Translation:
+      ja_JP:
+        caption: "トピックリスト"
+      en:
+        caption: "Topics"
+
+  community_navigation_event:
+    type: "community"
+    uri: "communityEvent/listCommunity"
+    sort_order: 6
+    Translation:
+      ja_JP:
+        caption: "イベントリスト"
+      en:
+        caption: "Events"

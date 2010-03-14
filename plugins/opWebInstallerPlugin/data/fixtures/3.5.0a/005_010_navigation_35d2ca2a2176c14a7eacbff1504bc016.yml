@@ -1,0 +1,46 @@
+Navigation:
+  secure_global_navigation_diary:
+    type: "secure_global"
+    uri: "diary/index"
+    sort_order: 25
+    Translation:
+      en:
+        caption: "Diary"
+      ja_JP:
+        caption: "日記"
+  default_navigation_diary:
+    type: "default"
+    uri: "diary/listMember"
+    sort_order: 15
+    Translation:
+      en:
+        caption: "Diary"
+      ja_JP:
+        caption: "日記"
+  friend_navigation_diary:
+    type: "friend"
+    uri: "diary/listMember"
+    sort_order: 15
+    Translation:
+      en:
+        caption: "Diary"
+      ja_JP:
+        caption: "日記"
+  mobile_home_side_navigation_diary_new:
+    type: "mobile_home_side"
+    uri: "@diary_new"
+    sort_order: 15
+    Translation:
+      en:
+        caption: "Post a Diary"
+      ja_JP:
+        caption: "日記を書く"
+  mobile_home_side_navigation_diary_list:
+    type: "mobile_home_side"
+    uri: "@diary_list"
+    sort_order: 16
+    Translation:
+      en:
+        caption: "Recently Posted Diaries"
+      ja_JP:
+        caption: "最新日記"
