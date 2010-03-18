@@ -85,8 +85,10 @@ class checkConfiguration
     $dbfile   = OPENPNE3_CONFIG_DIR.'/databases.yml';
     $cachedir = sfConfig::get('sf_root_dir').'/cache/test';
     $logfile  = sfConfig::get('sf_log_dir').'/test';
+    $imagedir = sfConfig::get('sf_web_dir').'/cache/test';
     self::setParams(is_writable($dbfile), 'config/databases.yml に書き込み権限があるか', 'ファイルのパーミッションを777にしてください', true);
     self::setParams(file_exists($cachedir) || @mkdir($cachedir, 0777), 'cache ディレクトリに権限があるか', 'cache ディレクトリのパーミッションを777にしてください', true);
     self::setParams(file_exists($logfile) || @touch($logfile, 0777), 'log ディレクトリに権限があるか', 'log ディレクトリのパーミッションを777にしてください', true);
+    self::setParams(file_exists($imagedir) || @mkdir($imagedir, 0777), 'web/cache ディレクトリに権限があるか', 'web/cache ディレクトリのパーミッションを777にしてください', true);
   }
 }
